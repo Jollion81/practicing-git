@@ -81,13 +81,14 @@ fetch('products.json').then(function (res) {
     // Everything we need to do with the data MUST be done in here!
     const target = document.querySelector('.target')
 
-    data.items.forEach(function (product) {
+    data.biscuits.forEach(function (product) {
         console.log(product)
         target.innerHTML += `
             <div>
                 <h2>${product.name}</h2>
-                <p>£${product.price}</p>
-                <img src="${product.image}" />
+                <p>£${product.desc}</p>
+                <p>£${product.RDT}</p>
+                <img src="${product.img}" />
             </div>
         `
     })
