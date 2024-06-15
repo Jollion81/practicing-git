@@ -74,7 +74,7 @@
 //     //target.innerHTML += `<li>${classMate.name} likes ${classMate.favFood} and listens to ${classMate.favArist}</li>`
 // })
 
-fetch('products.json').then(function (res) {
+fetch('classMatesExercise/products.json').then(function (res) {
     return res.json()
 }).then(function (data) {
     // In the second then block is the ONLY PLACE we are able to access the data we got back
